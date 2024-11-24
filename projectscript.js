@@ -3,40 +3,40 @@
 document.addEventListener("DOMContentLoaded", function() {
     const projects = {
         "larsondavis.io": {
-            description: "<br>This is not a new idea. Building a website to use as a portfolio. However, not all teachers recommends it. I can understand why, having seen some websites that I think would be better not existing. You don't wanna fall in with that bunch.<br><br>But my decision to go through with this is pretty straight-forward:<br> - It sounded like a really fun project<br> - It would come with a ton of practical experience<br> - the skills gained are valuable right now<br> - Lastly, I'd rather try and fail and learn from it, than learn nothing at all.<br><br>See the github repository for details into the tools I used as well.",
+            projectpage: "index.html",
+            description: "This is not a new idea. Building a website to use as a portfolio. However, not all teachers recommends it. I can understand why, having seen some websites that I think would be better not existing. You don't wanna fall in with that bunch.<br><br>But my decision to go through with this is pretty straight-forward:<br> - It sounded like a really fun project<br> - It would come with a ton of practical experience<br> - the skills gained are valuable right now<br> - Lastly, I'd rather try and fail and learn from it, than learn nothing at all.",
             github: "index.html", // for now, but i will update this as soon as I upload these files to github.
             image: "/larson.jpg",
-            projectpage: "larsondavis.io",
         },
         "Web-Based Magic 8-Ball": {
-            description: "<br>This is a web based Magic 8-Ball simulator- built on HTML, CSS, and JS. It's a very simple web app where most of it's visual elements have been made with CSS, and it's logic and responses are all built within the JavaScript file.<br><br>This was my first entry into using JavaScript. Really, really simple, but still, why not include it.",
+            projectpage: "",
+            description: "This was just a simple project that I first used to enter into JavaScript. With that said, the original project was basically just a reproduction of a video walkthrough on YouTube. So, I rebuilt it myself from scratch and without reviewing the original code. What came out looks very different XD<br><br>Why I built this:<br>- I was interested in learning the basics of JavaScript<br>- I wanted to get a little more experience with HTML and CSS<br>- It sounded fun",
             github: "will contain a specific url to the github repo",
             image: "/larson.jpg",
-            projectpage: "",
         },
         "A Desktop AI chatbot": {
-            description: "This a personal ai chatbot built with python,a available right on your desktop! You can set it's personality too!",
+            projectpage: "",
+            description: "This is a very simple AI chatbot desktop application. It is built with Python, tkinter, and llama-3. Not only does this connect and allow you to ask questions or write prompts, but I've also included a personality textbox, where the user can include the role of the AI to consider as it responds to the prompt.<br><br>Why I built this:<br>- I was interested in having easier access to using AI<br>- I wanted to use more APIs<br>- I was really interested in building anything with AI<br>- it sounded fun",
             github: "will contain a specific url to the github repo",
             image: "/larson.jpg",
-            projectpage: "",
         },
         "An Unhinged Reddit Bot": {
-            description: "This is an unhinged reddit bot lurking in the AITAH subreddit.",
+            projectpage: "",
+            description: "DISCLAIMER:I'm pretty sure that this would violate the terms of service, so this is an incomplete project as of now, however, still thought it sounded like a lot of fun and would be funny.<br><br>The premise was: Build an AI chatbot that responds to AITAH posts on reddit. The task was going to be to mock indiviuals who were very clearly 'not wrong', and to be incredibly sarcastic. The bot name would be \"Do not trust me- I'm AI\", however, would not try to convince other's that they aren't AI, but never actually admit it. There are many clear issues with this premise, but also, hilarious.<br><br>The motivations for creating this:<br>- It sounded super funny when I first thought of it<br>- I wanted to build a chatbot at all<br>- The experience would be new for me and I'd definitely learn<br>- Bragging rights<br>- It sounded fun... again.",
             github: "will contain a specific url to the github repo",
             image: "/larson.jpg",
-            projectpage: "",
         },
         "Sobriety Calculator": {
-            description: "This was like my very first python project where I actually built something. I built it using tkinter to create a GUI.",
+            projectpage: "",
+            description: "This was my very first project where I actually built something. I got a lot of help from YouTube and asking ChatGPT to explain everything that was happening at every step. As simple as this tool was, it had a GUI and a functional calendar that kept track of the user's sobriety date.<br><br>Why I built it:<br>- I wanted to build something and combine it with Recovery<br>- I wanted to build something that used a GUI<br>- I wanted to build with Python",
             github: "will contain a specific url to the github repo",
             image: "/larson.jpg",
-            projectpage: "",
         },
         "A Custom Water Loop": {
-            description: "This wasn't so much a coding project as it was a physical project, but it obviously takes knowing your basics of putting a windows computer together. But my custom-built hardline water-cooled machine is certainly not nothing. =]",
+            projectpage: "",
+            description: "This wasn't so much a coding project as it was a physical project, but it obviously takes knowing your basics of putting a windows computer together. But my custom-built hardline water-cooled machine is certainly not nothing. =]<br><br>Why did I spend money on this?:<br>- I have always wanted to water-cool a PC/ not that AIO Bulls***<br>- I have never done it and love building PCs<br>- Bragging Rights<br>- Ray-Tracing<br>- The best gaming experience possible<br>- Bragging rights, again<br>- It sounded fun, again",
             github: "will contain a specific url to the github repo",
             image: "/larson.jpg",
-            projectpage: "",
         },
     };
 
@@ -51,9 +51,10 @@ function displayProject(projectKey) {
         contentDisplay.innerHTML = `
             <h3>${projectKey}</h3>
             <center><img src="${project.image}" alt="${projectKey}" class="img-fluid project-image"></center>
-            <p>${project.description}</p>
+            <a href="${proj="_blank"}">Learn More Here</a>
+            <br><br>
+            <p>Project Description:<br>${project.description}</p>
             <a href="${project.github}" target="_blank">GitHub Repository</a>
-            <a href="${project.projectpage}" target="_blank">Project Page</a>
             `;
         }
     } 

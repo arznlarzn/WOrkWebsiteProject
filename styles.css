@@ -112,6 +112,9 @@ this content the way I would like it to.*/
     #heroRow {
         margin-top: 16vh;
     }
+    #listColumn {
+        margin-top: 14vh;
+    }
 }
 
 @media (max-width: 431px) {
@@ -127,7 +130,7 @@ this content the way I would like it to.*/
     #HeroImage {
         max-width: fit-content;
     }
-    #heroRow {
+    #heroRow  {
         margin-top: 14vh;
     }
 
@@ -140,6 +143,7 @@ this content the way I would like it to.*/
     #heroRow {
         margin-top: 14vh;
     }
+    
 }
 
 @media (max-width: 376px) {
@@ -162,10 +166,12 @@ this content the way I would like it to.*/
     margin-top: 5vh;
 }
 
+
 #projectRow {
     margin-top: 5vh;
-
 }
+
+
 
 #projectRow > * {
     border: 1px solid black;
