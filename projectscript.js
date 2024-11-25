@@ -51,12 +51,12 @@ function displayProject(projectKey) {
         contentDisplay.innerHTML = `
             <h3>${projectKey}</h3>
             <center><img src="${project.image}" alt="${projectKey}" class="img-fluid project-image" id="projectImage"></center>
-            <a href="${project.projectpage}" target="_blank"}">Learn More Here</a>
+            <a href="${project.projectpage}">Learn More Here</a>
             <br><br>
             <p>Project Description:<br>${project.description}</p>
-            <a href="${project.github}" target="_blank">GitHub Repository</a>
-            `;
-        }
+            <a href="${project.github}" target="_blank">GitHub Repository</a>` // we want the github repo to open in a new tab, 
+            ;// as to keep my website open on their machine, so as to not get pulled away to not come back
+        }// While we wanted the github to open in a new tab, we want project page to just update the tab instead. 
     } 
     
     // Check URL parameters for a specific project - this is so from the index.html, users can click 'here' to be taken to 

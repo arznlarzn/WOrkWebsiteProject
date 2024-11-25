@@ -157,6 +157,8 @@ this content the way I would like it to.*/
 
 #randomRow > *{
     margin: 3vh 0vh;
+    height: 50dvh;
+    align-content: center;
 }
 
 /* PROJECT PAGE CSS */
@@ -173,7 +175,7 @@ this content the way I would like it to.*/
 
 
 #projectRow > * {
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
     flex-grow: 1;
     height: fit-content;
     padding-top: 5vh;
@@ -184,14 +186,6 @@ this content the way I would like it to.*/
     max-width: 20vw;
 }
 
-#exampleColumn {
-    text-align: center; /* I have text-align filling both columns as a placeholder. So far I am declaring everything above
-    with the parent tag, and directing it to ALL of it's children */
-}
-
-#projectTextColumn {
-    text-align: center; /* I have text-align filling both columns as a placeholder */
-}
 
 /* ABOUT ME PAGE CSS*/
 
@@ -202,4 +196,32 @@ this content the way I would like it to.*/
 
 #meditationRow > * {
     margin: 5vh;
+}
+
+#blogsRow > *, #blogIntro > * {
+    flex-grow: 1;
+    height: 65dvh;
+    text-align: center;
+    align-content: center;
+}
+
+#blogInfo {
+    padding: 0vh 20vh;
+    margin-top: 3vh;
+} 
+
+#blogInfo p {
+    font-size: 1.5em;
+}
+
+#blogComingColumn {
+    text-align: center;
+    align-content: center;
+    height: 35dvh;
+}
+
+@media (max-width: 1024px) {
+   #blogInfo {
+        padding: 0vh;
+    } 
 }
