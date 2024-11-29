@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 body {
     background: linear-gradient(to right, whitesmoke, darkslategrey);
     margin: 0;
@@ -24,15 +28,17 @@ the 'containers' to 'transparent', otherwise, each container of content would be
   font-style: normal;
 }
 
-#header {
+#header > * {
     height: 5vh;
+    align-content: center;
+    font-size: 1.5rem;
 }
 
 #headeritem, #headeritem1 {
     background-color: darkslategrey;
     color:rgb(207, 222, 230);
     flex-grow: 1; /* Distribute space evenly between column items by stretching boxes */
-    padding: 0em;
+    padding: 0rem;
     text-align: center;
 }
 
@@ -76,15 +82,15 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 }
 
 #LDinfo {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     text-align: center;
     color: whitesmoke;
 }
 
 #textright{
-    text-align: right !important;
+    text-align: right;
     display: block;
-    font-size: 1.75em;
+    font-size: 2.5rem;
 }
 
 /* the media inquiries below are all used to for responsive design- all the max-widths that are below 768 are for
@@ -111,55 +117,49 @@ this content the way I would like it to.*/
     #heroRow {
         margin-top: 16vh;
     }
-    #listColumn {
-        margin-top: 14vh;
-    }
-}
-
-@media (max-width: 431px) {
-    #HeroImage {
-        max-width: fit-content;
-    }
-    #heroRow {
-        margin-top: 12vh;
-    }
-}
-
-@media (max-width: 415px) {
-    #HeroImage {
-        max-width: fit-content;
-    }
-    #heroRow  {
-        margin-top: 14vh;
-    }
 
 }
 
-@media (max-width: 391px) {
-    #HeroImage {
-        max-width: fit-content;
-    }
-    #heroRow {
-        margin-top: 14vh;
-    }
-    
-}
 
-@media (max-width: 376px) {
-    #HeroImage {
-        max-width: fit-content;
-    }
-    #heroRow {
-        margin-top: 20vh;
-    }
-}
+
 
 
 #randomRow > *{
     margin: 3vh 0vh;
-    height: 50dvh;
     align-content: center;
+    height: 30dvh;
 }
+
+#disclaimerText .hover-disclaimer {
+    display: none; /* Hide the detailed disclaimer by default */
+    position: relative; /* Position it for better control */
+    background-color: #fff; /* Background for better visibility */
+    color: #000; /* Text color */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100; /* Ensure it appears above other elements */
+}
+  
+  #disclaimerText:hover .hover-disclaimer {
+    display: block; /* Show the detailed disclaimer on hover */
+}
+  
+
+/* These media queries below are for mobile devices */
+@media (max-width: 431px) {
+    #HeroImage {
+        max-width: 60%;
+    }
+    #heroRow {
+        margin-top: 1vh;
+    }
+    #randomRow > * {
+        height: 40dvh;
+    }
+}
+
 
 /* PROJECT PAGE CSS */
 
@@ -168,16 +168,9 @@ this content the way I would like it to.*/
 }
 
 
-#projectRow {
-    margin-top: 5vh;
-}
-
-
-
 #projectRow > * {
     border: 1px solid whitesmoke;
     flex-grow: 1;
-    height: fit-content;
     padding-top: 5vh;
 }
 
@@ -211,7 +204,7 @@ this content the way I would like it to.*/
 } 
 
 #blogInfo p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 #blogComingColumn {
