@@ -132,7 +132,10 @@ this content the way I would like it to.*/
 
 #disclaimerText .hover-disclaimer {
     display: none; /* Hide the detailed disclaimer by default */
-    position: relative; /* Position it for better control */
+    position: absolute; /* Position it for better control */
+    top: 107%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #fff; /* Background for better visibility */
     color: #000; /* Text color */
     padding: 5px;
