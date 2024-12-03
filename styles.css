@@ -221,3 +221,39 @@ this content the way I would like it to.*/
         padding: 0vh;
     } 
 }
+
+#underconstruction {
+    margin-top: 3rem;
+}
+
+#underconstruction > * {
+    padding-top: 1rem;
+    align-content: center;
+}
+
+#underconimage {
+    width: 50%;
+    max-width: fit-content;
+}
+
+#underconstructiontext {
+    padding: 0rem 4rem;
+    color: #000;
+    font-size: 1.3rem;
+}
+
+#underconstructionimage {
+    font-size: 1.3rem;
+}
+#contact {
+    text-align: center;
+    align-content: center;
+    padding:2rem 0rem;
+}
+#contact a {
+    color: whitesmoke;
+}
+
+#contact span {
+    font-size:.9rem;
+}
