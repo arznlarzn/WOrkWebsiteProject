@@ -127,15 +127,13 @@ this content the way I would like it to.*/
 #randomRow > *{
     margin: 3vh 0vh;
     align-content: center;
-    height: 30dvh;
+    height: 45dvh;
 }
 
 #disclaimerText .hover-disclaimer {
     display: none; /* Hide the detailed disclaimer by default */
-    position: absolute; /* Position it for better control */
-    top: 107%;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative; /* Position it for better control */
+    transform: translateX(0%) translateY(-75%);
     background-color: #fff; /* Background for better visibility */
     color: #000; /* Text color */
     padding: 5px;
@@ -160,6 +158,12 @@ this content the way I would like it to.*/
     }
     #randomRow > * {
         height: 40dvh;
+    }
+    #disclaimerText .hover-disclaimer {
+        position: relative; /* Position it for better control, here it is relative to parent */
+        top: auto;
+        left: auto;
+        transform: translateX(0%); /* Reset the transform */
     }
 }
 
@@ -201,8 +205,7 @@ this content the way I would like it to.*/
     align-content: center;
 }
 
-#blogInfo {
-    padding: 0vh 20vh;
+#blogInfo, #blogImage {
     margin-top: 3vh;
 } 
 
