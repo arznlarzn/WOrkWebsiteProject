@@ -87,6 +87,12 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     color: whitesmoke;
 }
 
+#constructionText {
+    font-size: 1.2rem;
+    text-align: center;
+    color: whitesmoke;
+}
+
 #textright{
     text-align: right;
     display: block;
@@ -104,7 +110,7 @@ this content the way I would like it to.*/
 }
 
 @media (max-width: 768px) {
-    #LDinfo {
+    #LDinfo, #constructionText {
         color: black;
     }
 
