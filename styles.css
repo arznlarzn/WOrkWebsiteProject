@@ -296,3 +296,9 @@ this content the way I would like it to.*/
 #musicTracks {
     padding: 1rem;
 }
+
+#aboutIntro {
+    text-align: center;
+    padding: 3rem 2rem 1rem;
+    font-size: 1.5rem;
+}
