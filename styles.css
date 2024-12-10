@@ -67,7 +67,6 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 
 #heroRow > * {
     padding:3vh 3vh;
-    margin: 0vh 1.5vh;
     flex-grow: 1;
 }
 
@@ -75,6 +74,7 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     width: 100%;
     max-width: 30vw;
     height: auto; /* Maintain aspect ratio */
+    border-radius: 30px;
 }
 
 #heroRow .col-lg-6 {
@@ -125,9 +125,10 @@ this content the way I would like it to.*/
 
 
 #randomRow > *{
-    margin: 3vh 0vh;
+    flex-grow: 1;
+    padding: 1rem;
+    height: 40dvh;
     align-content: center;
-    height: 45dvh;
 }
 
 #disclaimerText .hover-disclaimer {
@@ -170,10 +171,13 @@ this content the way I would like it to.*/
 
 /* PROJECT PAGE CSS */
 
-#projectRow {
-    margin-top: 5vh;
+#listColumn {
+    font-size: 1.5rem;
 }
 
+#contentDisplayColumn {
+    font-size: 1rem;
+}
 
 #projectRow > * {
     border: 1px solid whitesmoke;
@@ -182,8 +186,9 @@ this content the way I would like it to.*/
 }
 
 .project-image {
-    width: 50%;
+    width: 30%;
     max-width: 20vw;
+    border-radius: 30px;
 }
 
 
@@ -198,16 +203,22 @@ this content the way I would like it to.*/
     margin: 5vh;
 }
 
-#blogsRow > *, #blogIntro > * {
-    flex-grow: 1;
-    height: 65dvh;
-    text-align: center;
+#blogImage {
     align-content: center;
+    padding: 2rem;
 }
 
-#blogInfo, #blogImage {
-    margin-top: 3vh;
-} 
+
+#blogsRow > *{
+    flex-grow: 1;
+    text-align: center;
+    align-content: center;
+    padding: .75rem 2rem;
+}
+
+#blogInfo {
+    padding: 2rem;
+}
 
 #blogInfo p {
     font-size: 1.5rem;
@@ -219,11 +230,7 @@ this content the way I would like it to.*/
     height: 35dvh;
 }
 
-@media (max-width: 1024px) {
-   #blogInfo {
-        padding: 0vh;
-    } 
-}
+
 
 #underconstruction {
     margin-top: 3rem;
@@ -259,4 +266,27 @@ this content the way I would like it to.*/
 
 #contact span {
     font-size:.9rem;
+}
+
+#musicInfoCol {
+    padding:1rem;
+}
+#musicImageCol {
+    align-items: center; /* Optional: Align vertically if needed */
+    padding : 1rem;
+}
+
+#musicImage {
+    width: 45%;
+    max-width: fit-content;
+    border-radius: 30px;
+}
+
+#musicInfoCol {
+    align-content: center;
+    padding-left: 1.5rem;
+}
+
+#musicTracks {
+    padding: 1rem;
 }
