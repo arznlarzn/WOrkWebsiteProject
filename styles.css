@@ -65,20 +65,21 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 
 
 
-#heroRow > * {
-    padding:3vh 3vh;
+#heroRow > *{
     flex-grow: 1;
 }
 
 #HeroImage {
-    width: 100%;
+    width: 65%;
     max-width: 30vw;
     height: auto; /* Maintain aspect ratio */
     border-radius: 30px;
 }
 
-#heroRow .col-lg-6 {
-    justify-content: center;
+#heroImageCol {
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0rem;    
 }
 
 #LDinfo {
