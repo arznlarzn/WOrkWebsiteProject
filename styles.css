@@ -71,12 +71,17 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 }
 
 #HeroImage {
-    width: 100%;
+    width: 65%;
     max-width: 30vw;
     height: auto; /* Maintain aspect ratio */
     border-radius: 30px;
 }
 
+#heroImageCol {
+    align-items: center;
+    text-align: center;
+    padding: 1rem 0rem;    
+}
 
 #LDinfo {
     font-size: 1.2rem;
