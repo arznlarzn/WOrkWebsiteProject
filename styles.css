@@ -3,9 +3,10 @@ html {
 }
 
 body {
-    background: linear-gradient(to right, whitesmoke, darkslategrey);
+    background: linear-gradient(to right, rgb(147, 144, 144), rgb(22, 1, 12));
     margin: 0;
     padding: 0;
+    color:rgb(184, 184, 184);
 }
 
 .container {
@@ -35,7 +36,7 @@ the 'containers' to 'transparent', otherwise, each container of content would be
 }
 
 #headeritem, #headeritem1 {
-    background-color: darkslategrey;
+    background-color: rgb(22, 1, 12);
     color:rgb(207, 222, 230);
     flex-grow: 1; /* Distribute space evenly between column items by stretching boxes */
     padding: 0rem;
@@ -63,11 +64,10 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 }
 
 
-
-
 #heroRow > * {
-    padding:3vh 3vh;
+    padding: 3vh 3vh 1vh;
     flex-grow: 1;
+    justify-content: center;
 }
 
 #HeroImage {
@@ -77,14 +77,10 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     border-radius: 30px;
 }
 
-#heroRow .col-lg-6 {
-    justify-content: center;
-}
 
 #LDinfo {
     font-size: 1.2rem;
     text-align: center;
-    color: whitesmoke;
 }
 
 #constructionText {
@@ -111,7 +107,10 @@ this content the way I would like it to.*/
 
 @media (max-width: 768px) {
     #LDinfo, #constructionText {
-        color: black;
+        color:rgb(184, 184, 184);
+    }
+    #heroRow > * {
+        padding: 1vh;
     }
 
 }
@@ -120,14 +119,7 @@ this content the way I would like it to.*/
     #HeroImage {
         max-width: 60%;
     }
-    #heroRow {
-        margin-top: 16vh;
-    }
-
 }
-
-
-
 
 
 #randomRow > *{
@@ -135,6 +127,10 @@ this content the way I would like it to.*/
     padding: 1rem;
     height: 40dvh;
     align-content: center;
+}
+
+#randomRow > :first-child {
+    text-align: center;
 }
 
 #disclaimerText .hover-disclaimer {
@@ -159,9 +155,6 @@ this content the way I would like it to.*/
 @media (max-width: 431px) {
     #HeroImage {
         max-width: 60%;
-    }
-    #heroRow {
-        margin-top: 1vh;
     }
     #randomRow > * {
         height: 40dvh;
@@ -215,7 +208,7 @@ this content the way I would like it to.*/
 }
 
 
-#blogsRow > *{
+#blogsRow > * {
     flex-grow: 1;
     text-align: center;
     align-content: center;
@@ -301,4 +294,18 @@ this content the way I would like it to.*/
     text-align: center;
     padding: 3rem 2rem 1rem;
     font-size: 1.5rem;
+}
+
+#words {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+#big {
+    font-size: 2.5rem;
+    color: whitesmoke;
+}
+
+#aboutMiddle > * {
+    text-align: right;
 }
