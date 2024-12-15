@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "Sobriety Calculator": {
             projectpage: "#",
             description: "This was my very first project where I actually built something. I got a lot of help from YouTube and asking ChatGPT to explain everything that was happening at every step. As simple as this tool was, it had a GUI and a functional calendar that kept track of the user's sobriety date.<br><br>Why I built it:<br>- I wanted to build something and combine it with Recovery<br>- I wanted to build something that used a GUI<br>- I wanted to build with Python",
-            github: "index.html",
+            github: "https://github.com/arznlarzn/SobrietyCalculator",
             image: "/Sobriety Calculator.jpg",
         },
         "A Custom Water Loop": {
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
         "The Classic To-Do List": {
             projectpage: "#",
             description: "I had to. I honestly feel like the way we all know \'Hello World\' is the gateway into programming/coding at all, the \'To-Do List\' is, for many, the first real project. It wasn't for me, but I know the value of experience... and I love this stuff.<br><br>Why I built this:<br>-Interested in learning JavaScript<br>-I was also interested in using HTML and CSS more<br>-I actually thought maybe I could use it<br>-I could always add a real-time server and expand it<br>-The experience is needed<br>-it sounded fun",
-            github: "",
+            github: "https://github.com/arznlarzn/ToDoList",
             image: "/todolist2.jpg",
         },
     };
@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const projectItems = document.querySelectorAll("#listColumn ul li");
     const contentDisplay = document.getElementById("contentDisplayColumn");
+    const githubLink = document.getElementById("githubLink");
 
 // Function to display project details // 
 function displayProject(projectKey) { 
@@ -64,14 +65,27 @@ function displayProject(projectKey) {
             <a href="${project.projectpage}" id="comingSoonLinkAlert">Learn More Here</a>
             <br><br>
             <p>Project Description:<br>${project.description}</p>
-            <a href="${project.github}" target="_blank">GitHub Repository</a>` // we want the github repo to open in a new tab, 
+            <a href="${project.github}" id="githubLink" target="_blank">GitHub Repository</a>` // we want the github repo to open in a new tab, 
             ;// as to keep my website open on their machine, so as to not get pulled away to not come back
+            
+            const githubLink = document.querySelector("#githubLink");
             const comingSoonLinkAlert = document.getElementById("comingSoonLinkAlert");
 
             comingSoonLinkAlert.addEventListener("click", function(event) {
                 event.preventDefault();
                 alert("Detailed descriptions, along with tools and technologies used, will be added soon! Thank you, again!");
             })
+
+            if (projectKey === "An Unhinged Reddit Bot" || projectKey === "A Desktop AI chatbot") {
+                githubLink.addEventListener("click", function(event) {
+                    event.preventDefault();
+                    alert("I do not have these GitHub repositories ready or haven't completed yet. Will update soon!");
+                });
+            } else {
+                githubLink.addEventListener("click", function(event) {
+                    window.open(project.github, "_blank");
+                });
+            }
         
         }// While we wanted the github to open in a new tab, we want project page to just update the tab instead. 
     } 
@@ -100,18 +114,10 @@ function displayProject(projectKey) {
       
     projectItems.forEach(item => {
         item.addEventListener("click", function() {
-            const projectKey = this.textContent.split(" - ")[0].trim;
-            displayProject(projectKey);
-        })
-    })
-
-    //add click event listeners
-    projectItems.forEach(item => {
-        item.addEventListener("click", function() {
             const projectKey = this.textContent.split(' - ')[0];
             const project = projects[projectKey];
-
-        displayProject(projectKey);
+            
+            displayProject(projectKey);
         });
     });
 
