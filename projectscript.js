@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
             projectpage: "#",
             description: "This is a very simple AI chatbot desktop application. It is built with Python, tkinter, and llama-3. Not only does this connect and allow you to ask questions or write prompts, but I've also included a personality textbox, where the user can include the role of the AI to consider as it responds to the prompt.<br><br>Why I built this:<br>- I was interested in having easier access to using AI<br>- I wanted to use more APIs<br>- I was really interested in building anything with AI<br>- it sounded fun",
             github: "music.html",
-            image: "larson.jpg",
+            image: "/AIphoto.jpg",
         },
         "An Unhinged Reddit Bot": {
             projectpage: "#",
             description: "DISCLAIMER:I'm pretty sure that this would violate the terms of service, so this is an incomplete project as of now, however, still thought it sounded like a lot of fun and would be funny.<br><br>The premise was: Build an AI chatbot that responds to AITAH posts on reddit. The task was going to be to mock indiviuals who were very clearly 'not wrong', and to be incredibly sarcastic. The bot name would be \"Do not trust me- I'm AI\", however, would not try to convince other's that they aren't AI, but never actually admit it. There are many clear issues with this premise, but also, hilarious.<br><br>The motivations for creating this:<br>- It sounded super funny when I first thought of it<br>- I wanted to build a chatbot at all<br>- The experience would be new for me and I'd definitely learn<br>- Bragging rights<br>- It sounded fun... again.",
             github: "abouthim.html",
-            image: "larson.jpg",
+            image: "/redditHome.jpg",
         },
         "Sobriety Calculator": {
             projectpage: "#",
