@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
         "larsondavis.io": {
             projectpage: "#",
             description: "Building a website to serve as a portfolio. Not all teachers recommend this. I can understand why, since I have seen some websites that I think would be better, simply, not existing. You don't wanna fall in with that bunch.<br><br>*The image was of my landing page before launch.*<br><br>But my decision to go through with this is pretty straight-forward:<br> - It sounded like a really fun project<br> - It would come with a ton of practical experience<br> - the skills gained are valuable to have *right* now<br> - Lastly, I'd rather try and fail and learn from it, than learn nothing at all.",
-            github: "index.html", // for now, but i will update this as soon as I upload these files to github.
+            github: "https://github.com/arznlarzn/WOrkWebsiteProject",
             image: "/homepage.jpg",
         },
         "Web-Based Magic 8-Ball": {
             projectpage: "#",
-            description: "This was just a simple project that I first used to enter into JavaScript. With that said, the original project was basically just a reproduction of a video walkthrough on YouTube. So, I rebuilt it myself from scratch and without reviewing the original code. What came out looks very different XD<br><br>Why I built this:<br>- I was interested in learning the basics of JavaScript<br>- I wanted to get more experience with HTML and CSS<br>- It sounded fun",
-            github: "blogs.html",
-            image: "larson.jpg",
+            description: "This was just a simple project that I first used to enter into JavaScript. With that said, the original project was basically just a reproduction of a video walkthrough on YouTube. The image you see above is what I was left with after the tutorial. There was exactly 0 contribution from me at that point.<br><br>So, I decided I would rebuilt it myself without reviewing the original code and trying to avoid getting outside help. I suspect my remake will look very different. Will update the images and linkes when I complete this project. <br><br>Why I built this:<br>- I was interested in learning the basics of JavaScript<br>- I wanted to get more experience with HTML and CSS<br>- It sounded fun",
+            github: "https://github.com/arznlarzn/GitHubMagic8Ball",
+            image: "/Magic8Ball.jpg",
         },
         "A Desktop AI chatbot": {
             projectpage: "#",
