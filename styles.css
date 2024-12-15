@@ -74,7 +74,7 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     width: 65%;
     max-width: 80%;
     height: auto; /* Maintain aspect ratio */
-    border-radius: 30px;
+    border-radius: 60px;
 }
 
 #heroImageCol {
@@ -86,6 +86,10 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 #LDinfo {
     font-size: 1.2rem;
     text-align: center;
+}
+
+#watercooledImage {
+    border-radius: 20px;
 }
 
 #constructionText {
@@ -192,7 +196,7 @@ this content the way I would like it to.*/
 .project-image {
     width: 30%;
     max-width: 20vw;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 

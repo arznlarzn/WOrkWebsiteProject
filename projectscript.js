@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", function() {
         "A Custom Water Loop": {
             projectpage: "music.html",
             description: "This wasn't so much a coding project as it was a physical project, but it obviously takes knowing your basics of putting a windows computer together. But my custom-built hardline water-cooled machine is certainly not nothing. =]<br><br>Why did I spend money on this?:<br>- I have always wanted to water-cool a PC/ not that AIO Bulls***<br>- I have never done it and love building PCs<br>- Bragging Rights<br>- Ray-Tracing<br>- The best gaming experience possible<br>- Bragging rights, again<br>- It sounded fun, again",
-            github: "music.html",
-            image: "larson.jpg",
+            github: "/projects.html?project=A_Custom_Water_Loop",
+            image: "/MyBeastEE.png",
         },
     };
 
