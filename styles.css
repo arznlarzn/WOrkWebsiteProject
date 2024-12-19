@@ -92,6 +92,8 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     border-radius: 20px;
 }
 
+
+
 #constructionText {
     font-size: 1.2rem;
     text-align: center;
@@ -303,10 +305,14 @@ this content the way I would like it to.*/
     padding: 1rem;
 }
 
-#aboutIntro {
-    text-align: center;
+#aboutIntroTextCol, #aboutIntroImgCol, #aboutPresent, #aboutNext {
+    text-align: right;
     padding: 3rem 2rem 1rem;
     font-size: 1.5rem;
+}
+
+.title {
+    text-align: center;
 }
 
 #words {
@@ -321,6 +327,10 @@ this content the way I would like it to.*/
 
 #aboutMiddle > * {
     text-align: right;
+}
+
+#aboutMiddle, #aboutBeginning, #aboutEnd {
+    font-size: 1.25rem;
 }
 
 /* Style for modal background */
