@@ -1,5 +1,5 @@
 html {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 body {
@@ -65,7 +65,6 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 
 
 #heroRow > * {
-    padding: 3vh 3vh 1vh;
     flex-grow: 1;
     justify-content: center;
 }
@@ -80,12 +79,11 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 #heroImageCol {
     align-items: center;
     text-align: center;
-    padding: 1rem;    
 }
 
 #LDinfo {
     font-size: 1.2rem;
-    text-align: center;
+    text-align: right;
 }
 
 #watercooledImage {
@@ -135,6 +133,21 @@ this content the way I would like it to.*/
     }
 }
 
+/* These media queries below are for mobile devices */
+@media (max-width: 431px) {
+    #HeroImage {
+        max-width: 60%;
+    }
+    #randomRow > * {
+        height: 40dvh;
+    }
+    #disclaimerText .hover-disclaimer {
+        position: relative; /* Position it for better control, here it is relative to parent */
+        top: auto;
+        left: auto;
+        transform: translateX(0%); /* Reset the transform */
+    }
+}
 
 
 #randomRow > * {
@@ -166,21 +179,7 @@ this content the way I would like it to.*/
 }
   
 
-/* These media queries below are for mobile devices */
-@media (max-width: 431px) {
-    #HeroImage {
-        max-width: 60%;
-    }
-    #randomRow > * {
-        height: 40dvh;
-    }
-    #disclaimerText .hover-disclaimer {
-        position: relative; /* Position it for better control, here it is relative to parent */
-        top: auto;
-        left: auto;
-        transform: translateX(0%); /* Reset the transform */
-    }
-}
+
 
 
 /* PROJECT PAGE CSS */
