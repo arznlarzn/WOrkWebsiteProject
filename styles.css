@@ -1,5 +1,5 @@
 html {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 body {
@@ -308,6 +308,21 @@ this content the way I would like it to.*/
     text-align: right;
     padding: 3rem 2rem 1rem;
     font-size: 1.5rem;
+}
+
+#aboutIntroImgCol{
+    font-size: 1rem;
+    align-content: center;
+    text-align: center;
+}
+
+#borderline {
+    font-size: 2rem;
+}
+
+#aboutIntroImg {
+    width: 100%%;
+    max-width: 100%;
 }
 
 .title {
