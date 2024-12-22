@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         "A Custom Water Loop": {
             projectpage: "#",
-            description: "This wasn't so much a development project, however it obviously demonstrates basic knowledge of setting up a windows environment (Yes, I put it together, AND I set it up, too!). I have built a fare amount of PCs, but even without the water-cooling, I am proud of this build. And if you know computer hardware, although I look like a Corsair Fanboy, I am not. XD They just nailed the asthetic. =] <br><br>This is a Corsair D4000 case. I have an Intel Core i7-14700k, 32GB of DDR4 at 3200Mhz (before MT/s), and a Founder's Edition 3080TI. My CPU and GPU are both on Corsair waterblocks, and I have a resevoir/pump combo, also Corsair.<br><br>I am running Windows 11, and I made this decision because of the reported advantage of the P and E-core architecture on Windows 11. <br><br>That time I posted on Reddit how I lost my gf, but still had my PC.<br><br>Why did I spend money on this?:<br>- I have always wanted to water-cool a PC/ not that AIO Bulls***<br>- I have never done it and love building PCs<br>- Bragging Rights<br>- Ray-Tracing<br>- The best gaming experience possible<br>- Bragging rights, again<br>- It sounded fun, again<br><br>*What could the GitHub Repo be?",
+            description: "This wasn't so much a development project, however it obviously demonstrates basic knowledge of setting up a windows environment (Yes, I put it together, AND I set it up, too!). I have built a fare amount of PCs, but even without the water-cooling, I am proud of this build. And if you know computer hardware, although I look like a Corsair Fanboy, I am not. XD They just nailed the asthetic. =] <br><br>This is a Corsair D4000 case. I have an Intel Core i7-14700k, 32GB of DDR4 at 3200Mhz (before MT/s), and a Founder's Edition 3080TI. My CPU and GPU are both on Corsair waterblocks, and I have a resevoir/pump combo, also Corsair.<br><br>I am running Windows 11, and I made this decision because of the reported advantage of the P and E-core architecture on Windows 11.<br><br>Why did I spend money on this?:<br>- I have always wanted to water-cool a PC/ not that AIO Bulls***<br>- I have never done it and love building PCs<br>- Bragging Rights<br>- Ray-Tracing<br>- The best gaming experience possible<br>- Bragging rights, again<br>- It sounded fun, again<br><br>*What could the GitHub Repo be? -That time I posted on Reddit how I lost my gf, but still had my PC.",
             github: "https://www.reddit.com/r/watercooling/comments/1ex8u8t/my_girlfriend_left_me_at_least_ive_got_you/",
             image: "/MyBeastEE.png",
         },
@@ -62,19 +62,12 @@ function displayProject(projectKey) {
                 <span class="close" onclick="closeModal('${projectKey}-modal')">&times;</span>
                 <img class="modal-content" id="${projectKey}-modalImage" src="${project.image}" alt="${projectKey}">
             </div>
-            <a href="${project.projectpage}" id="comingSoonLinkAlert">Learn More Here</a>
-            <br><br>
-            <p>Project Description:<br>${project.description}</p>
+            <p><br>Project Description:<br>${project.description}</p>
             <a href="${project.github}" id="githubLink" target="_blank">GitHub Repository</a>` // we want the github repo to open in a new tab, 
             ;// as to keep my website open on their machine, so as to not get pulled away to not come back
             
             const githubLink = document.querySelector("#githubLink");
             const comingSoonLinkAlert = document.getElementById("comingSoonLinkAlert");
-
-            comingSoonLinkAlert.addEventListener("click", function(event) {
-                event.preventDefault();
-                alert("Detailed descriptions, along with tools and technologies used, will be added soon! Thank you, again!");
-            })
 
             if (projectKey === "An Unhinged Reddit Bot" || projectKey === "A Desktop AI chatbot") {
                 githubLink.addEventListener("click", function(event) {
