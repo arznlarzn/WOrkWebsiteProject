@@ -74,6 +74,7 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     max-width: 80%;
     height: auto; /* Maintain aspect ratio */
     border-radius: 60px;
+    box-shadow: #000 0px 0px 10px;
 }
 
 #heroImageCol {
@@ -139,7 +140,7 @@ this content the way I would like it to.*/
         max-width: 60%;
     }
     #randomRow > * {
-        height: 40dvh;
+        height: 30dvh;
     }
     #disclaimerText .hover-disclaimer {
         position: relative; /* Position it for better control, here it is relative to parent */
@@ -153,13 +154,14 @@ this content the way I would like it to.*/
 #randomRow > * {
     flex-grow: 1;
     padding: 1rem;
-    height: 60dvh;
+    height: 45dvh;
     align-content: center;
 }
 
 #randomRow > :first-child {
     text-align: center;
     padding-bottom: 1rem;
+    
 }
 #disclaimerText .hover-disclaimer {
     display: none; /* Hide the detailed disclaimer by default */
@@ -202,9 +204,51 @@ this content the way I would like it to.*/
     width: 45%;
     max-width: 18vw;
     border-radius: 20px;
+    box-shadow: #000 0px 0px 10px;
 }
 
 
+/* Style for modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: fit-content;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal img {
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+.modal img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+  
 /* ABOUT ME PAGE CSS*/
 
 #aboutRow > * {
@@ -257,6 +301,8 @@ this content the way I would like it to.*/
 #underconimage {
     width: 50%;
     max-width: fit-content;
+    box-shadow: #000 0px 0px 10px;
+    border-radius: 30px;
 }
 
 #underconstructiontext {
@@ -321,8 +367,10 @@ this content the way I would like it to.*/
 }
 
 #aboutIntroImg {
-    width: 100%%;
+    width: 100%;
     max-width: 100%;
+    border-radius: 200px;
+    box-shadow: #000 0px 0px 10px;
 }
 
 .title {
@@ -334,10 +382,7 @@ this content the way I would like it to.*/
     font-style: italic;
 }
 
-#big {
-    font-size: 2.5rem;
-    color: whitesmoke;
-}
+
 
 #aboutMiddle > * {
     text-align: right;
@@ -347,44 +392,3 @@ this content the way I would like it to.*/
     font-size: 1.25rem;
 }
 
-/* Style for modal background */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: fit-content;
-    max-width: 700px;
-}
-
-.close {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.modal img {
-    max-height: 90vh;
-    max-width: 90vw;
-}
-
-.modal img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-  
