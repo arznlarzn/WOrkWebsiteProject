@@ -33,6 +33,26 @@ the 'containers' to 'transparent', otherwise, each container of content would be
       "MORF" 0;
 }
 
+.playwrite-de-grund-guides-regular {
+    font-family: "Playwrite DE Grund Guides", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.recoveryTitleBox {
+    font-size: 2rem;
+    color:rgba(245, 245, 245, 0.414);
+    background-color: rgba(0, 0, 50, 0.5);
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+  
+#writingImage {
+    border-radius: 30px;
+    box-shadow: #000 5px 5px 5px;
+}
+
 .geist-mono-base {  /* A variable font that I am using in the most basic sense possible, at least for now */
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
@@ -50,11 +70,13 @@ the 'containers' to 'transparent', otherwise, each container of content would be
     font-size: 2rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
     width: 40%;
-    margin: 0 auto;
+    margin: 60px auto 0px;
     color: black;
     background-color: rgba(94, 1, 70, 0.222);
     border-radius: 40px;
 }
+
+
 
 #header > * {
     height: 5vh;
@@ -91,7 +113,7 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 }
 
 
-#heroRow > * {
+#heroRow > :first-child {
     flex-grow: 1;
     justify-content: center;
 }
@@ -101,6 +123,7 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     max-width: 80%;
     height: auto; /* Maintain aspect ratio */
     border-radius: 60px;
+    box-shadow: #000 -5px 5px 5px;
 }
 
 #heroImageCol {
@@ -109,8 +132,11 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 }
 
 #LDinfo {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: right;
+    padding-right: 1remrem;
+    margin-right: 0rem;
+    justify-content: right;
 }
 
 #watercooledImage {
@@ -127,7 +153,6 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 
 #textright{
     text-align: right;
-    display: block;
     font-size: 2.5rem;
 }
 
@@ -182,6 +207,7 @@ this content the way I would like it to.*/
     padding: 1rem;
     height: 60dvh;
     align-content: center;
+    font-size:1.2rem;
 }
 
 #randomRow > :first-child {
@@ -199,6 +225,7 @@ this content the way I would like it to.*/
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 100; /* Ensure it appears above other elements */
+    font-size: .9rem;
 }
   
   #disclaimerText:hover .hover-disclaimer,
@@ -233,6 +260,11 @@ this content the way I would like it to.*/
     border-radius: 20px;
 }
 
+#aboutPhoto {
+    border-radius: 30px;
+    max-width: 600px;
+    box-shadow: #000 -5px 5px 5px;
+}
 
 /* ABOUT ME PAGE CSS*/
 
@@ -247,7 +279,7 @@ this content the way I would like it to.*/
 
 #blogImage {
     align-content: center;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 
@@ -333,16 +365,24 @@ this content the way I would like it to.*/
     padding: 1rem;
 }
 
-#aboutIntroTextCol, #aboutIntroImgCol, #aboutPresent, #aboutNext {
+#aboutIntroTextCol {
     text-align: right;
     padding: 3rem 2rem 1rem;
     font-size: 1.5rem;
 }
 
+#aboutPresent, #aboutPresentText {
+    text-align: right;
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+
 #aboutIntroImgCol{
     font-size: 1rem;
     align-content: center;
     text-align: center;
+    padding: 0rem 3rem;
 }
 
 #borderline {
@@ -352,6 +392,12 @@ this content the way I would like it to.*/
 #aboutIntroImg {
     width: 100%;
     max-width: 100%;
+    border-radius: 30px;
+    box-shadow: #000 -5px 5px 5px;
+}
+
+#aboutIntroImgCol p {
+    margin-top: 1rem;
 }
 
 .title {
@@ -372,8 +418,8 @@ this content the way I would like it to.*/
     text-align: right;
 }
 
-#aboutMiddle, #aboutBeginning, #aboutEnd {
-    font-size: 1.25rem;
+#aboutMiddle,  #aboutNext, #aboutBeginning, #aboutEnd {
+    font-size: 1.5rem;
 }
 
 /* Style for modal background */
