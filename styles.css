@@ -250,6 +250,8 @@ this content the way I would like it to.*/
     text-align: center;
     margin-bottom: 1rem;
     border-bottom: 1px solid whitesmoke;
+    width: 115%;
+    
 }
 
 .latestContainer {
