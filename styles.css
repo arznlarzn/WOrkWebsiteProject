@@ -81,6 +81,9 @@ the 'containers' to 'transparent', otherwise, each container of content would be
     box-shadow: #000 5px 5px 15px;
 }
 
+
+
+
 .geist-mono-base {  /* A variable font that I am using in the most basic sense possible, at least for now */
     font-family: "Geist Mono", monospace;
     font-optical-sizing: auto;
@@ -336,6 +339,11 @@ this content the way I would like it to.*/
     padding: 3rem;
 }
 
+#blogImage p {
+    text-align: right;
+    padding-right: 2rem;
+}
+
 
 #blogsRow > * {
     flex-grow: 1;
@@ -348,12 +356,16 @@ this content the way I would like it to.*/
     padding: 2rem 2rem 0rem;
     box-sizing: border-box;
     position: relative;
-    height: 90vh;
+    height: 60dvh;
 }
 
 #blogInfo p {
     font-size: 1.5rem;
     position: absolute;
+}
+
+#blogIntro {
+    height:60dvh;
 }
 
 #biggerText {
