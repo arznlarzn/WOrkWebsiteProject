@@ -371,6 +371,81 @@ this content the way I would like it to.*/
     font-size: 1.4rem;
 }
 
+#strungOutColumn {
+    padding: 1rem;
+}
+
+#strungOut {
+    border-radius: 30px;
+    height: 38dvh;
+    box-shadow: #000 5px 5px 15px;
+}
+
+#aboutMiddle .col-md-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#saltLakeColumn {
+    padding: 1rem;
+}
+
+#BBpic {
+    border-radius: 30px;
+    height: 38dvh;
+    box-shadow: #000 5px 5px 15px;
+    background-color: rgb(39, 31, 45);
+}
+
+#BBcolumn {
+    padding: 1rem;
+}
+
+#aboutEnd .col-md-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dadAndSon {
+    border-radius: 30px;
+    height: 38dvh;
+    box-shadow: #000 5px 5px 15px;
+}
+
+#dadAndSonColumn {
+    padding: 1rem;
+}
+
+#profileLarson {
+    border-radius: 30px;
+    height: 38dvh;
+    box-shadow: #000 5px 5px 15px;
+}
+
+#profileColumn {
+    padding: 1rem;
+}
+
+#aboutNext .col-md-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutPresent .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutBeginning .col-md-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #smallerText {
     font-size: 1rem;
 }
