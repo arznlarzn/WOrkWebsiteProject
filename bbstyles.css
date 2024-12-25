@@ -1,0 +1,26 @@
+:root {
+    --badbuddhistred: #660202;
+    --raisinblack: #282828;
+    --mimipink: #ffd6e0;
+    --ashgray: #93a29b;
+    --pumpkin: #FE7F2D;
+    --metallicgold: #C8AD55;
+    --coralpink: #EB9486;
+}
+
+header {
+    background-color: var(--badbuddhistred);
+    color: var(--ashgray);
+    border: var(--raisinblack) 1px solid;
+    width: clamp(370px, 80%, 1200px);
+    margin: 0 auto;
+}
+
+body {
+    font-family: system-ui, sans-serif, serif;
+}
+
+.heroRow {
+    text-align: center;
+}
+
