@@ -10,6 +10,12 @@ body {
     font-family: "Inter", sans-serif, serif;
 }
 
+li {
+    border: black 1px solid;
+    border-radius: 15px;
+    margin-bottom:2rem;
+}
+
 
 
 .inter-font {
@@ -530,8 +536,34 @@ this content the way I would like it to.*/
     padding-left: 1.5rem;
 }
 
+
+    
 #musicTracks {
+    display: flex;
+    flex-direction: horizontal;
+    align-items: flex-end;
+}
+
+
+
+.song {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+audio {
+    width: 100%;
+    max-width: 90%;
+    border-radius: 30px;
+    box-shadow: #000 -5px 5px 15px;
+}
+
+.song h3, .song p {
+    margin: 0;
+    width: fit-content;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 #aboutIntroTextCol {
