@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         "A Desktop AI chatbot": {
             projectpage: "#",
-            description: "This is a very simple AI chatbot desktop application. It is built with Python, tkinter, and llama-3. Not only does this connect and allow you to ask questions or write prompts, but I've also included a personality textbox, where the user can include the role of the AI to consider as it responds to the prompt.<br><br>Why I built this:<br>- I was interested in having easier access to using AI<br>- I wanted to use more APIs<br>- I was really interested in building anything with AI<br>- it sounded fun",
+            description: "This is a very simple AI chatbot desktop application. It is built with Python, tkinter, and llama-3. Not only does this connect and allow you to ask questions or write prompts, but I've also included a personality textbox, where the user can include the role of the AI to consider as it responds to the prompt.<br>*UPDATE: Well, it turns out, I managed to delete this entire project. So, I will be rebuilding it. Probably, for the best. I will update this when I complete this.<br><br>Why I built this:<br>- I was interested in having easier access to using AI<br>- I wanted to use more APIs<br>- I was really interested in building anything with AI<br>- it sounded fun",
             github: "music.html",
             image: "/AIphoto.jpg",
         },
