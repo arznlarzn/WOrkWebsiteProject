@@ -18,7 +18,9 @@ li {
     width: fit-content;
 }
 
-
+#dateSuffix {
+    font-size: smaller;
+}
 
 .inter-font {
   font-family: "Inter", serif;
@@ -68,30 +70,13 @@ the 'containers' to 'transparent', otherwise, each container of content would be
     font-style: normal;
   }
 
-.recoveryTitleBox {
-    color:rgba(245, 245, 245, 0.414);
-    background-color: rgba(0, 0, 50, 0.1);
-    border-radius: 20px;
-    width: fit-content;
-    margin: 0 auto;
-    box-shadow: #1313138e 5px 5px 15px;
-}
-.recoveryTitle1 {
-    font-size: 1.5rem;
-}
-.recoveryTitle2 {
-    font-size: 3rem;
-}
-
-
-
 #badbuddhistColumnImage {
     box-shadow: #470909 -2px 2px 10px;
     border-radius: 1rem;
     width: 260px;
     max-width: none;
     background-color: whitesmoke;
-    }
+}
   
 #writingImage {
     border-radius: 30px;
@@ -112,18 +97,6 @@ the 'containers' to 'transparent', otherwise, each container of content would be
   font-family: system-ui, sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-
-.mrfixittitle {
-    font-size: 2rem;
-    text-decoration: underline;
-    box-shadow: 10px 10px 10px rgba(35, 35, 35, 0.368);
-    width: 40%;
-    margin: 60px auto 0px;
-    color: black;
-    background-color: rgba(94, 1, 70, 0.23);
-    border-radius: 40px;
-    border:#000 3px dotted;
 }
 
 
@@ -174,6 +147,7 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     height: auto; /* Maintain aspect ratio */
     border-radius: 60px;
     box-shadow: #000 -5px 5px 15px;
+    margin: 1rem;
 }
 
 #heroImageCol {
@@ -362,30 +336,25 @@ this content the way I would like it to.*/
 }
 
 
-#blogsRow > * {
+#badBuddhistColumn {
     flex-grow: 1;
     text-align: center;
     align-content: center;
     padding: .75rem 2rem;
+    font-size: 1.4rem;
 }
 
 #blogInfo {
     padding: 2rem 2rem 0rem;
     box-sizing: border-box;
-    position: relative;
 }
 
 #blogInfo p {
     font-size: 1.5rem;
-    position: absolute;
-}
-
-#blogIntro > *{
-    height:75dvh;
 }
 
 #biggerText {
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
 
 #strungOutColumn {
@@ -657,7 +626,7 @@ audio {
     margin: auto;
     display: block;
     width: fit-content;
-    max-width: 700px;
+    max-width: 100%;
 }
 
 .close {
@@ -671,8 +640,7 @@ audio {
 }
 
 .modal img {
-    max-height: 90vh;
-    max-width: 90vw;
+    max-width: 60vw;
 }
 
 .modal img:hover {
