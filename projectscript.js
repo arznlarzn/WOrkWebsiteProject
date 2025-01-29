@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         "An Unhinged Reddit Bot": {
             projectpage: "#",
-            description: "DISCLAIMER:I'm pretty sure that this would violate the terms of service, so this is an incomplete project as of now, however, still thought it sounded like a lot of fun and would be funny.<br><br>The premise was: Build an AI chatbot that responds to AITAH posts on reddit. The task was going to be to mock indiviuals who were very clearly 'not wrong', and to be incredibly sarcastic. The bot name would be \"Do not trust me- I'm AI\", however, would not try to convince other's that they aren't AI, but never actually admit it. There are many clear issues with this premise, but also, hilarious.<br><br>The motivations for creating this:<br>- It sounded super funny when I first thought of it<br>- I wanted to build a chatbot at all<br>- The experience would be new for me and I'd definitely learn<br>- Bragging rights<br>- It sounded fun... again.",
+            description: "DISCLAIMER:I'm pretty sure that this would violate the terms of service, so this is an incomplete project as of now, however, still thought it sounded like a lot of fun and would be funny.<br>ALSO - The image is just my favorite Reddit sub XD<br><br>The premise was: Build an AI chatbot that responds to AITAH posts on reddit. The task was going to be to mock indiviuals who were very clearly 'not wrong', and to be incredibly sarcastic. The bot name would be \"Do not trust me- I'm AI\", however, would not try to convince other's that they aren't AI, but never actually admit it. There are many clear issues with this premise, but also, hilarious.<br><br>The motivations for creating this:<br>- It sounded super funny when I first thought of it<br>- I wanted to build a chatbot at all<br>- The experience would be new for me and I'd definitely learn<br>- Bragging rights<br>- It sounded fun... again.",
             github: "abouthim.html",
             image: "/redditHome.jpg",
         },
@@ -57,7 +57,7 @@ function displayProject(projectKey) {
     if (project) {
         contentDisplay.innerHTML = `
             <h4>${projectKey}</h4>
-            <center><img src="${project.image}" alt="${projectKey}" class="img-fluid project-image" id="projectImage" onclick="openModal('${projectKey}-modal')"></center>
+            <center><img src="${project.image}" alt="${projectKey}" id="projectImage" onclick="openModal('${projectKey}-modal')"></center>
             <div id="${projectKey}-modal" class="modal">  <!--I am creating modals here instead in the HTML file, because it also needs to update along with this information -->
                 <span class="close" onclick="closeModal('${projectKey}-modal')">&times;</span>
                 <img class="modal-content" id="${projectKey}-modalImage" src="${project.image}" alt="${projectKey}">
@@ -94,7 +94,7 @@ function displayProject(projectKey) {
     window.openModal = function (modalId) {
         const modal = document.getElementById(modalId);
         if (modal) {
-            modal.style.display = "block";
+            modal.style.display = "flex";
         }
       };
       
