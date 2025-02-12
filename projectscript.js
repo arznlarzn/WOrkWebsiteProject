@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const projects = {
         "larsondavis.io": {
             projectpage: "#",
-            description: "Building a website to serve as a portfolio. Not all teachers recommend this. I can understand why, since I have seen some websites that I think would be better, simply, not existing. You don't wanna fall in with that bunch.<br><br>*The image was of my landing page before launch.*<br><br>But my decision to go through with this is pretty straight-forward:<br> - It sounded like a really fun project<br> - It would come with a ton of practical experience<br> - the skills gained are valuable to have *right* now<br> - Lastly, I'd rather try and fail and learn from it, than learn nothing at all.",
+            description: "Building a website to serve as a portfolio. Not all teachers recommend this. I can understand why, since I have seen some websites that I think would be better, simply, not existing. You don't wanna fall in with that bunch.<br><br>*The image was of my landing page before launch.*<br>*AND- AI was only used when I needed help problem solving. The whole point of the site was really to build it myself and LEARN from it. =]<br><br>But my decision to go through with this is pretty straight-forward:<br> - It sounded like a really fun project<br> - It would come with a ton of practical experience<br> - the skills gained are valuable to have *right* now<br> - Lastly, I'd rather try and fail and learn from it, than learn nothing at all.",
             github: "https://github.com/arznlarzn/WOrkWebsiteProject",
             image: "/homepage.jpg",
         },

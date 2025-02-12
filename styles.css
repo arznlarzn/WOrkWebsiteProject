@@ -319,6 +319,12 @@ this content the way I would like it to.*/
     box-shadow: #000 -5px 5px 15px;
 }
 
+#projectDisclosure {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-style: italic;
+}
+
 /* ABOUT ME PAGE CSS*/
 
 #aboutRow > * {
@@ -552,7 +558,6 @@ audio {
 
 .song h3, .song p {
     margin: 0;
-    width: fit-content;
     display: inline-block;
     vertical-align: bottom;
 }
