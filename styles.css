@@ -174,6 +174,13 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     width: 45%;
 }
 
+#latestImg {
+    border-radius: 20px;
+    box-shadow: #000 -5px 5px 15px;
+    display: block;
+    margin: 0 auto 1rem;
+    width: 65%;
+}
 
 
 #constructionText {
@@ -273,7 +280,7 @@ this content the way I would like it to.*/
     text-align: center;
     border-bottom: 10px solid whitesmoke;
     box-sizing: border-box;
-    width: 108%;
+    width: 100%;
     margin: 0;
 }
 
