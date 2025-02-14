@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
         },
         "A Desktop AI chatbot": {
             projectpage: "#",
-            description: "This is a very simple AI chatbot desktop application. It is built with Python, tkinter, and llama-3. Not only does this connect and allow you to ask questions or write prompts, but I've also included a personality textbox, where the user can include the role of the AI to consider as it responds to the prompt.<br>*UPDATE: Well, it turns out, I managed to delete this entire project. So, I will be rebuilding it. Probably, for the best. I will update this when I complete this.<br><br>Why I built this:<br>- I was interested in having easier access to using AI<br>- I wanted to use more APIs<br>- I was really interested in building anything with AI<br>- it sounded fun",
+            description: "NOTE:The picture is useless and has nothing to do with anything XD XD<br><br>This is a very simple AI chatbot desktop application. It is built with Python, tkinter, and llama-3. Not only does this connect and allow you to ask questions or write prompts, but I've also included a personality textbox, where the user can include the role of the AI to consider as it responds to the prompt.<br>*UPDATE: Well, it turns out, I managed to delete this entire project. So, I will be rebuilding it. Probably, for the best. I will update this when I complete this.<br><br>Why I built this:<br>- I was interested in having easier access to using AI<br>- I wanted to use more APIs<br>- I was really interested in building anything with AI<br>- it sounded fun",
             github: "music.html",
             image: "/AIphoto.jpg",
         },
@@ -43,6 +43,12 @@ document.addEventListener("DOMContentLoaded", function() {
             description: "I had to. I honestly feel like the way we all know \'Hello World\' is the gateway into programming/coding at all, the \'To-Do List\' is, for many, the first real project. It wasn't for me, but I know the value of experience... and I love this stuff.<br><br>Why I built this:<br>-Interested in learning JavaScript<br>-I was also interested in using HTML and CSS more<br>-I actually thought maybe I could use it<br>-I could always add a real-time server and expand it<br>-The experience is needed<br>-it sounded fun",
             github: "https://github.com/arznlarzn/ToDoList",
             image: "/todolist2.jpg",
+        },
+        "Chore Point Tracker": {
+            projectpage: "#",
+            description: "I worked at a homeless shelter with over 150 'participants' and we gave 'points' to our participants if they helped us out in any way or wanted to earn them- they translated into staying out late or nights out (Yes, if you stay in a shelter, there are rules and expectations). You can see comments in the code explaining every part. In short:<br>Each bed had 2 people, (we catered to couples, partners, pairs) and we had a total of 76 beds.<br><br>Why I built it:<br>- We tracked the chore points by adding them to a spreadsheet, but different understandings and inconsistencies created constant issues<br>- I wanted to build something anyone could use with ease<br>- I wanted to build it as simply as possible, so I chose Python and tkinter<br>- I wanted to build something that would be useful<br>- it sounded fun<br>- this was a big deal for the people we served, and could be the difference between getting kicked out into the streets, or not",
+            github: "https://github.com/arznlarzn/ChorePointTracker",
+            image: "/ChorePointTracker.png",
         },
     };
 
