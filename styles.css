@@ -164,6 +164,9 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
     padding-top: 1rem;
 }
 
+#LDinfo #dateText {
+    line-height: 1rem;
+}
 #dateText {
     font-size: .95rem;
 }
@@ -192,6 +195,7 @@ a:hover {           /* Adding an underline when the links on any of the pages ar
 #textright{
     text-align: right;
     font-size: 2.5rem;
+    line-height: 1rem;
 }
 
 /* the media inquiries below are all used to for responsive design- all the max-widths that are below 768 are for
